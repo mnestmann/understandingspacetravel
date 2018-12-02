@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="history">
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet">
+	<script src="quizHistory.js"></script>
+	<title>How We Learned about Space</title>
+</head>
+<body>
+	<h1>Understanding the History of Space Exploration</h1>
+	<div id="prehistory">
+		<p>Before beginning this lesson, take a few minutes to think about what you already know regarding space travel.
+			<ul><li>What were key discoveries that made space flight possible?</li>
+			<li>Who were the people that advanced our ability to travel into space?</li>
+			<li>How would you summarize the story of space travel thus far?</li></ul></p>
+		<input type="button" class="button" value="Continue lesson" onclick="forward()">
+	</div>
+	<div id="quizContainer" style="display:none">
+		<p>Our current position as space explorers was made possible by several discoveries over the centuries. Take this quiz to see
+		what you already know. After taking the quiz, you will have an opportunity to view a historical timeline and correct your answers.</p>
+		<form id="quiz">
+		<h2 align="center">Quiz</h2>
+		<div class="row">
+			<div class=column>
+				<p class="question">In what year and which mathematician developed the first accurate set of laws regarding planetary motion? </p>
+				<input type="radio" class="answer" name="mc1" value="a">Johnson 1961 </br>
+				<input type="radio" class="answer" name="mc1" value="b">Kepler 1609 </br>
+				<input type="radio" class="answer" name="mc1" value="c">Newton 1687 </br>
+				<input type="radio" class="answer" name="mc1" value="d">Copernicus 1543 </br>
+				<p class="question">When and where did the first known rockets appear? </p>
+				<input type="radio" class="answer" name="mc2" value="a">China 1232 </br>
+				<input type="radio" class="answer" name="mc2" value="b">Netherlands 1543 </br>
+				<input type="radio" class="answer" name="mc2" value="c">Germany 1941 </br>
+				<input type="radio" class="answer" name="mc2" value="d">United States 1956 </br>
+				<p class="question">Which country was the first to successfully put a satellite in orbit? </p>
+				<input type="radio" class="answer" name="mc3" value="a">Soviet Union </br>
+				<input type="radio" class="answer" name="mc3" value="b">United States </br>
+				<input type="radio" class="answer" name="mc3" value="c">Germany </br>
+				<input type="radio" class="answer" name="mc3" value="d">China </br>
+				<p class="question">What was the first US/Soviet partnership regarding space flight? </p>
+				<input type="radio" class="answer" name="mc4" value="a">1975 </br>
+				<input type="radio" class="answer" name="mc4" value="b">1986 </br>
+				<input type="radio" class="answer" name="mc4" value="c">1994 </br>
+				<input type="radio" class="answer" name="mc4" value="d">2000 </br>
+				<p class="question">What was the first space station? </p>
+				<input type="radio" class="answer" name="mc5" value="a">International Space Station </br>
+				<input type="radio" class="answer" name="mc5" value="b">Mir </br>
+				<input type="radio" class="answer" name="mc5" value="c">Salyut I </br>
+				<input type="radio" class="answer" name="mc5" value="d">Skylab </br>
+			</div>
+			<div class="column">
+				<p class="question">Which countries have successfully launched space stations? </p>
+				<input type="radio" class="answer" name="mc6" value="a">US and Soviet Union only </br>
+				<input type="radio" class="answer" name="mc6" value="b">US, Soviet Union, and China </br>
+				<input type="radio" class="answer" name="mc6" value="c">US, Soviet Union, and Germany </br>
+				<input type="radio" class="answer" name="mc6" value="d">US, Soviet Union, and Finland</br>
+				<p class="question">Modern rockets use what kind of propellent? </p>
+				<input type="radio" class="answer" name="mc7" value="a">Steam</br>
+				<input type="radio" class="answer" name="mc7" value="b">Liquid</br>
+				<input type="radio" class="answer" name="mc7" value="c">Gun powder </br>
+				<input type="radio" class="answer" name="mc7" value="d">Mechanical</br>
+				<p class="question">What is the name of the ship which pioneered the possibility of commercial space flight? </p>
+				<input type="radio" class="answer" name="mc8" value="a">MarsRover</br>
+				<input type="radio" class="answer" name="mc8" value="b">FalconHeavy </br>
+				<input type="radio" class="answer" name="mc8" value="c">Mission8</br>
+				<input type="radio" class="answer" name="mc8" value="d">SpaceShipOne </br>
+				<p class="question">In what year was commercial flight first tested? </p>
+				<input type="radio" class="answer" name="mc9" value="a">2004</br>
+				<input type="radio" class="answer" name="mc9" value="b">2012</br>
+				<input type="radio" class="answer" name="mc9" value="c">2018 </br>
+				<input type="radio" class="answer" name="mc9" value="d">A commercial vehicle has been proposed but not tested yet</br>
+				<p class="question">What author did Elon Musk credit as the reason for SpaceX's existence? </p>
+				<input type="radio" class="answer" name="mc10" value="a">Ray Bradbury</br>
+				<input type="radio" class="answer" name="mc10" value="b">Isaac Asimov</br>
+				<input type="radio" class="answer" name="mc10" value="c">Jules Verne </br>
+				<input type="radio" class="answer" name="mc10" value="d">Ursula K. Le Guin</br>
+				<input type="button" class="button" value="Submit" onclick="check()">
+			</div>
+		</div>
+		</form>
+	</div>
+	<div id="results" class="results" style="display:none">
+		<h2 align="center">Results</h2>
+		<p><span id="score"> </span> <span id="percent"> </span> <a href="https://www.tiki-toki.com/timeline/entry/1067639/History-of-Space-Travel/" target="_blank">
+		Timeline of Space Discoveries</a></p>
+		<input type="button" class="button" value="Retake quiz" onclick="retake()">
+		<input type="button" class="button" value="Continue lesson" onclick="reveal()">
+	</div>
+	<div id="history2" style="display:none">
+		<h2>Reflecting on History</h2>
+		<p>It's not enough to know the facts regarding space exploration. Take some time to think about how events connect on the <a href="https://www.tiki-toki.com/timeline/entry/1067639/History-of-Space-Travel/" target="_blank">timeline</a>. In particular, take a few minutes to reflect on each of the following questions:
+		<ol><li>How did literature/art affect mathematical discoveries?</li>
+		<li>In what ways did competition promote discovery? When was cooperation necessary for advancement? 
+		What do you think is the right balance between competition and cooperation?</li></ol></p>
+		<span class="button"><a href="index.html" style="text-decoration:none;">Return to homepage</a></span> 
+		<span class="button"><a href="references.html#History" style="text-decoration:none;">References</a></span> 
+		<span class="button"> <a href="solvingproblems.html" style="text-decoration:none;">Next topic</a></span>
+		<span class="button"> <a href="history.html" style="text-decoration:none;">Restart lesson</a></span>
+	</div>
+</body>
+</html>

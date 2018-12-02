@@ -1,0 +1,149 @@
+/* === GENERAL PAGE SET UP === */
+html {
+	background: #010048;
+	}
+body {
+	font-family: Helvetica, Trebuchet;
+	color: #ffffff;
+	margin: 35px;
+}
+/* === HOME PAGE SETTINGS == */
+/* Put title in middle of page */
+.vercenter { 
+	position: fixed;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+}
+/* Add text to bottom of page */
+.bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.home {
+	background: url("image/space.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+/* Create animations */
+#satelliteContainer {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 50%;
+}
+#satellite {
+	position: absolute;
+}
+/* === GENERAL STYLING === */
+h1 {
+	color: pink;
+	text-align: center;
+}
+h2 {
+	color: Gold;
+	margin: 20px 0px;
+	font-size: 1.75em;
+}
+h3 {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.pink {
+	color: pink;
+}
+a {
+	color: #ffffff;
+}
+a:hover {
+	color: pink;
+}
+.menu a {
+	padding: 20px;
+}
+.indent {
+	margin-left: 20px;
+}
+/* == Accordion Menu Settings == */
+.accordion {
+	background: #010048;
+	border: none;
+}
+.accordion img {
+	float: left;
+}
+.accordion h2 {
+	display: inline;
+	float: left;
+}
+.fullwidth {
+  	width: 100%;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+/* === QUIZ FORMATS === */
+#quiz, #results {
+	width: 75%;
+	margin: 0 auto;
+	color: gold;
+	background: #02009E;
+	border-radius: 30px;
+	padding: 0px 20px 20px 30px;
+	border: 2px solid #020043;
+}
+/* Add space between choices */
+input {
+	margin-bottom: 5px;
+}
+/* Place quiz questions in columns */
+.row {
+	margin-top: -20px;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Blend links with text in results section*/
+.results a {
+	color: gold;
+}
+.results a:hover {
+	color: #ffffff;
+}
+
+.button {
+	background: goldenrod;
+	color: #010048;
+	border: 2px solid #010030;
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.button:hover {
+	background: #010048;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.button a {
+	margin: 5px;
+	color: #010048;
+}
+.button a:hover {
+	color: gold;
+}
+
+
+
